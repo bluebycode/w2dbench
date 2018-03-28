@@ -108,7 +108,7 @@ window.view = {};
          * Translate the triangle: configuration given by 2nd and 3rd position of vector
          * passed as argument.
          */
-        translate = function(vector){
+        translate : function(vector){
             var matriz  = new Matrix4();
             matriz.setIdentity();
             var x_value = vector[1]/100.0;
@@ -122,7 +122,7 @@ window.view = {};
          * Scales the triangle: configuration given by 4rd and 5th position of vector
          * passed as argument.
          */
-        scale = function(vector){
+        scale : function(vector){
             var matriz  = new Matrix4();
             matriz.setIdentity();
             var x_scale = vector[3];
@@ -136,7 +136,7 @@ window.view = {};
          * Rotates the triangle: configuration given by 6th-8th
          * passed as argument.
          */
-        rotate = function(vector){
+        rotate : function(vector){
             var matriz  = new Matrix4();
             matriz.setIdentity();
             var rot_angle = vector[5];
