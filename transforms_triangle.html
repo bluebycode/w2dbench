@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Affine transforms and model matrix</title>
+  </head>
+
+  <body onload="controller.initialization()">
+    <div id="controller" style="padding-bottom: 10px;">
+        <span id="title" style="float:left; padding-top:9px; padding-right: 15px;"></span>&nbsp;
+        <div style="float:right;"></div>
+          <button id="b_all" onclick="controller.applyAll()">Execute all operations</button>
+          <button id="b_next" onclick="controller.applyNext()">Next</button>
+          From:
+          <input style="text-align: center; height: 26px; width: 30px;" id="startsAt" maxlength="1" value="0" type="text">
+          <input id="inverse_order"type="checkbox">Reverse<br>
+          <div id="message" style="float:right;"></div>
+      </div>
+    </div>
+    <table id="canvas">
+      <tbody>
+        <tr>
+          <td>        
+            <canvas id="webgl" width="800" height="800">
+            Please use a browser that supports "canvas"
+            </canvas>
+          </td>
+          <td>        
+            <p id="output"></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="information" style="float:right;">example</div>&nbsp;
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+
+    <script src="apps/triangle/data/operations.js"></script>
+
+    <script src="apps/triangle/controller.js"></script>
+    <script src="apps/triangle/view.js"></script>
+  
+    <script src="js/engine.js"></script>
+t>
+  </body>
+</html>
