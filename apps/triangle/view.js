@@ -115,7 +115,7 @@ window.view = {};
             var y_value = vector[2]/100.0;
             matriz.translate(x_value, y_value, 0);
             this.transform(matriz);
-            this.triangle.log("{0} {1}".format(x_value.toString(), y_value.toString()));
+            this.log("{0} {1}".format(x_value.toString(), y_value.toString()));
         },
     
         /**
