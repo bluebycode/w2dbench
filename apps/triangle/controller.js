@@ -76,7 +76,7 @@ window.controller = {};
     controller.next = function(isReverse, triggersDraw) {
         var lastStep = step;
 
-        controller.showMessage("Running step: " + step + "/ was " + lastStep +", reverse: " + isReverse);
+        self.showMessage("Running step: " + step + "/ was " + lastStep +", reverse: " + isReverse);
 
         var type   = operations[step][0],
             vector = operations[step];
